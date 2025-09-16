@@ -151,3 +151,6 @@ genfscon sysfs /devices/virtual/wide_torch/wide_torch/wide_torch_level          
 # aw87xxx vmax
 genfscon sysfs /devices/platform/1101a000.i2c7/i2c-7/7-0058/vmax u:object_r:aw87xxx_vmax:s0
 
+# VM stuff
+genfscon proc /sys/vm/vfs_cache_pressure            u:object_r:proc_drop_caches:s0
+genfscon proc /sys/vm/dirty_ratio                   u:object_r:proc_dirty:s0
