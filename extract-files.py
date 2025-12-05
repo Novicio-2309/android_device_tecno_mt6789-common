@@ -23,6 +23,7 @@ namespace_imports = [
     'device/tecno/mt6789-common',
     'hardware/mediatek',
     'hardware/mediatek/libmtkperf_client',
+    'hardware/mediatek/libaedv',
     'hardware/millennium',
 ]
 

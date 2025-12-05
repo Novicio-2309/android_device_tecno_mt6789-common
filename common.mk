@@ -51,7 +51,7 @@ PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := lz4
 
 # Audio
 $(call soong_config_set,android_hardware_audio,run_64bit,true)
-$(call soong_config_set,android_hardware_audio,skip_speaker_layout_channel_mask_field,true)
+$(call soong_config_set_bool,android_hardware_audio,skip_speaker_layout_channel_mask_field,true)
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl:64 \
     android.hardware.audio.effect@7.0-impl:64 \
@@ -459,6 +459,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/mediatek \
     hardware/mediatek/libmtkperf_client \
+    hardware/mediatek/libaedv \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/millennium
