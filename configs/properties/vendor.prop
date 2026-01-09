@@ -321,6 +321,10 @@ ro.vendor.mtk.sensor.support=yes
 ro.soc.manufacturer=Mediatek
 ro.soc.model=MT6789V/CD
 
+# Scroll Optimizer
+persist.sys.perf.scroll_opt=true
+persist.sys.perf.scroll_opt.heavy_app=1
+
 # TEE
 ro.vendor.mtk_svp_on_mtee_support=2
 ro.vendor.mtk_trustonic_tee_support=1
